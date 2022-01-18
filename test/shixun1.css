@@ -1,0 +1,17 @@
+.test {
+	text-align:center;
+	color: #2343;
+}
+
+#headline{
+	height: 10px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+#date{
+	    float: left;
+}
+
+#adress{
+	    float: right;
+}
