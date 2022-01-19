@@ -1,0 +1,146 @@
+            <html>
+
+<head>
+	<link rel = "stylesheet" type = "text/css" href = "zhuye.css">
+	<meta charset = "utf-8">
+	<title> Button 工享 </title>     <!-- title:网页标题标签 -->
+	
+	<script type="text/javascript" src="/plugin/jquery-easyui-1.4.3/jquery.min.js"></script>
+</head>                            
+
+<body>
+<div class="bodystyle">
+	<div id = "header">
+		<img class ="logo" src="pictures\logo.png"/>
+		<div class="text1">共享员工，灵活用工</div>
+		<div class="menu">
+			<ul>
+						<a href="zhuye.html" title="首页" ><button class = "t0">首页</button></a>
+						<a href="study.html" title="学习天地" ><button class = "t">学习天地</button></a>
+						<a href="forum.html" title="论坛" ><button class = "t">论坛</button></a>
+						<a href="message.html" title="个人中心" ><button class = "t">个人中心</button></a>
+			</ul>
+		</div>
+	</div>
+	
+	
+	
+	<div id = "main">
+		<div id ="search1">
+			<img class ="logo1" src="pictures\logo1.jpg"/>
+			<form id = "search">
+			<input type = "text" name = "search" placeholder="搜索职位，公司"
+			style = "font-size:25px;height:45;width:500;background-color: #ffffff99;">
+			</form>
+			<button class = "button1" type="button">搜索</button>
+			<div class="tuijian">
+				<b class="t1">热门行业：</b>
+				<ul>
+						<a href="null.html" title="餐饮" class="t2">餐饮</a>
+						<a href="null.html" title="零售" class="t2">零售</a>
+						<a href="null.html" title="物流" class="t2">物流</a>
+						<a href="null.html" title="外卖" class="t2">外卖</a>
+						<a href="null.html" title="文职" class="t2">文职</a>
+						<a href="null.html" title="IT" class="t2">IT</a>
+						<a href="null.html" title="金融" class="t2">金融</a>
+						<a href="null.html" title="教育" class="t2">教育</a>
+				</ul>
+			</div>
+		</div>
+		
+		<div id ="body">
+			<div id ="left">
+				<ol>
+					<h3 class="t3">互联网IT </h3>
+					<h3 class="t3">金融 </h3>
+					<h3 class="t3">房地产/建筑 </h3>
+					<h3 class="t3">贸易/零售/物流 </h3>
+					<h3 class="t3">教育/传媒/广告 </h3>
+					<h3 class="t3">服务业 </h3>
+					<h3 class="t3">市场/销售 </h3>
+					<h3 class="t3">人事/财务/行政 </h3>
+					<h3 class="t3">全部职类 </h3>
+				</ol>
+			</div>
+		
+			<div id="center" >
+					<div id="carousel" style="border:0px solid #000000; float:left;">
+						<div id="tabpic">
+							<div style="display:block;"><img src="pictures\3.jpg" width="650px"></div> <!-- display:block;强制将它改成块元素。 -->
+							<div style="display:none;"><img src="pictures\4.jpg" width="650px" /></div>
+							<div style="display:none;"><img src="pictures\5.jpg" width="650px" /></div>
+							<div style="display:none;"><img src="pictures\6.png" width="650px" /></div>
+							<div style="display:none;"><img src="pictures\7.jpg" width="650px" /></div>
+						</div>
+						<div style="float:right;">
+							<a href="javascript:void(0)" name="tablink" οnclick="div_tab(0)" style="color:#28FF28;">①</a>
+							<a href="javascript:void(0)" name="tablink" οnclick="div_tab(1)" style="color:#FFFFFF;">②</a>
+							<a href="javascript:void(0)" name="tablink" οnclick="div_tab(2)" style="color:#FFFFFF;">③</a>
+							<a href="javascript:void(0)" name="tablink" οnclick="div_tab(3)" style="color:#FFFFFF;">④</a>
+							<a href="javascript:void(0)" name="tablink" οnclick="div_tab(4)" style="color:#FFFFFF;">⑤</a>
+						</div>
+					</div>
+			</div>
+		
+			<div id ="right">
+				<a href="null.html"><img src="pictures\3.png" class = "fuwu"/></a>
+				<a href="null.html"><img src="pictures\4.png" class = "fuwu"/></a>
+				<a href="null.html"><img src="pictures\5.png" class = "fuwu"/></a>
+				
+			</div>
+		</div>
+	
+		
+	</div>
+	
+	<div id = "bottom"> 
+		<div id = "message">
+			<div id = "bottom-left">
+				<ul>
+						<a href="null.html" title="关于我们" class="t5">关于我们</a>
+						<a href="null.html" title="联系我们" class="t5">联系我们</a>
+						<a href="null.html" title="友情链接" class="t5">友情链接</a>
+						<a href="null.html" title="入职培训" class="t5">入职培训</a>
+						<a href="null.html" title="企业服务" class="t5">企业服务</a>
+				</ul>
+				<h3 id = "t4">员工共享，就找button工享！</h3>
+			</div>
+			<div id = "bottom-right">
+				<p >©BUTTON.COM 求职，员工调动与共享平台</p>
+				<p>蜀ICP备09013689号</p>
+			</div>
+		</div>
+	</div>
+	
+</div>
+</body>
+
+<script type="text/javascript">
+    function div_tab(tabName){
+        var tabLinkArr=document.getElementsByName("tablink");
+        var tabPicArr=document.getElementById("tabpic").getElementsByTagName("div");
+        for(var i=0;i<tabLinkArr.length;i++){
+            if(i==tabName){
+                tabLinkArr[i].style.color="#28FF28";
+                tabPicArr[i].style.display="block";
+            } else{
+                tabLinkArr[i].style.color="#FFFFFF";
+                tabPicArr[i].style.display="none";
+            }
+        }
+    }
+    var i=0;
+    function auto_tab_div(){
+    //如果切換到最後一張圖片則重新從第一張開始
+    if(i>4){
+        i=0;
+    }
+    //每兩秒自動讀取下一張圖片
+    div_tab(i);
+        i++;
+    }
+    setInterval("auto_tab_div()",3000);
+</script>
+
+</html>
+
