@@ -1,0 +1,235 @@
+<script type="text/javascript" src="iqiyiJsBridge-v2-min.js"></script>
+
+
+<style>
+.nw_banner{
+  /* padding-top:55.4666%; */
+  font-size: 0;
+  margin-bottom:-1px;
+  position:relative;
+}
+.nw_banner img{
+    width: 100%;
+}
+.rule_btn{
+    width:6.8%;
+    height:34.856%;
+    background: #000;
+    position:absolute;
+    right:0;
+    top:9.6154%;
+    display:block;
+    border:none;
+}
+.popContainer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .7);
+      z-index: 10;
+  }
+  .rulePop {
+      position: absolute;
+      top: 50%;
+      width: 100%;    
+      margin-top: -67.4vw;
+      height: 134.8vw;
+      background-image: url(https://pic3.iqiyipic.com/common/20200714/mallqiqu_200710_ruleBg.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center center;
+      z-index: 99
+  }
+  #ruleContent {
+      position: absolute;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      width: 80%;
+      left: 9%;
+      height: 75%;
+      top: 12%;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      padding-right: 4%;
+      z-index:99;
+  }
+  #ruleContent > * {
+      color: #000;
+      line-height: 1.5;
+      text-align: left;
+      -o-text-overflow: initial;
+      text-overflow: initial;
+      white-space: normal;
+      font-size: 12px;
+      margin-bottom: 3px;
+  }
+  #ruleContent h1 {
+      font-size: 14px;
+      text-align: left;
+      margin-bottom: 5px;
+      color:#734ee5;
+      font-weight: bold;
+  }
+  .rulePop .btnClosePop {
+      position: absolute;
+      background: #734ee5;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 9%;
+  }
+  .body_fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  }
+  .forceHide{
+    background: #ac2a2a;
+    display:none !important;
+  }
+  .com-6423 .bg-box{
+    background: url(//pic3.iqiyipic.com/lequ/20220309/1242ab0a53184fa394c1988e42332c8a.png);
+    /* no-repeat #ffced4 !important; */
+    /* //background-size: contain !important; */
+    background-size:cover;
+    background-position: center top;
+    padding-top: 0.626rem;
+    position: relative;
+  }
+  .com-6423 .lottery-box{
+      background: url(//pic0.iqiyipic.com/lequ/20210224/cj_main_bg.png);
+      background-size: cover;
+      padding: 0.32rem 0.52rem;
+  }
+  .com-6423 .lottery-box div{
+      width: 0.85rem;
+        height: 0.85rem;
+        margin-bottom: 0.054rem;
+  }
+  .com-6423 .tips .alert-bg{
+      background: url(//pic0.iqiyipic.com/lequ/20210224/cj_pop_fail.png);
+      background-size: cover;
+  }
+  .com-6423 .tips .alert-name{
+    height: .4rem;
+    width: 2.1rem;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    font-size: .18rem;
+  }
+  .com-6423 .alert-btn{
+      background: url(//pic1.iqiyipic.com/lequ/20210224/cj_pop_confirm2.png);
+          background-size: cover;
+    font-size: 0;
+    margin-top:0;
+  }
+  .com-6423 .winning-record{
+      height: 0.3rem;
+    width: 50%;
+    float: right;
+  }
+  .com-6423 .winning-record{
+    height: 0.4rem;
+    width: 50%;
+    float: right;
+  }
+  .com-6423 .winning-record p{
+    background:none;
+    background-image: linear-gradient(to right, #9e7ceb, #6d4ae1);
+    margin-top: 0.09rem;
+    margin-right: 0.24rem;
+  }
+  .com-6423 .lottery-times{
+    width: 50%;
+    height: 0.4rem;
+    text-align: left;
+    line-height: 0.4rem;
+    color: #785ae0 !important;
+    position: absolute;
+    left: 0.24rem;
+    top: 0.65rem;
+  }
+  .com-6423 .lottery-times b{
+    color: #785ae0 !important;
+  }
+  .com-6423 .lottery-box div.shop{
+    background:url(//pic3.iqiyipic.com/lequ/20210224/choujiang_210223_cardbg.png) no-repeat center / cover !important;
+  }
+  .com-6423 .lottery-box .start{
+    background:url(//pic0.iqiyipic.com/lequ/20210223/choujiang_210223_btn.png) no-repeat center / cover !important;
+  }
+</style>
+<div class="nw_banner">
+    <img src= "//pic0.iqiyipic.com/lequ/20220309/f1a895de06924d3185b04bb42c947b59.png" />
+<div class="rule_btn"></div>
+</div>
+
+<div class="popContainer forceHide"></div>
+<div class="rulePop forceHide">
+<div id="ruleContent">
+<h1>活动规则：</h1>
+<h2>一、活动时间：</h2>
+<p>
+2021年2月26日0:00:00——2021年3月8日23:59:59
+</p>
+<h2>二、抽奖规则：</h2>
+<p>
+活动期间每个爱奇艺注册账户每天可以进行1次抽奖，每天第一次成功分享后，抽奖机会+1。用户在指定抽奖页面点击“点我抽奖”后有概率可抽取到相应奖品；奖品内容详见第三条“奖品及兑换说明”。
+</p>
+<h2>三、奖品及兑换说明：</h2>
+<p> 
+1. 爱奇艺VIP黄金年卡：<br> 
+1.1 中奖用户填写手机号后爱奇艺VIP黄金年卡兑换码将以短信方式发送至用户填写的手机号；<br>
+1.2 兑换流程：登录爱奇艺官网（建议选择浏览器方式打开），在“我的-VIP会员-会员卡激活”输入激活码即可激活（激活前请务必登录您的爱奇艺账号）；<br>
+1.3 请于2021年10月1日前使用兑换码进行激活使用，逾期未激活使用导致激活码产品过期者，一律不补，特此声明；<br>
+1.4 本奖项总计5份，数量有限，发完即止。<br>
+2. 赛嘉电动牙刷 免费兑换券：<br>
+2.1 中奖用户的优惠券直接到账至该用户爱奇艺账号，中奖用户可至“我的奖品”中选择此优惠券，点击立即使用，将此商品加入购物车，结算时可直接减免商品金额0元领取，或进入爱奇艺商城—我的—优惠券中查看并使用；<br>
+2.2 该兑换券限指定商品使用，仅可抵扣商品金额，不抵扣运费，不折现；<br>
+2.3 兑换券有效期至:2021年3月9日23:59:59，逾期未兑换即为失效，不再进行补偿；<br>
+2.4 本奖项总计50份，数量有限，发完即止。<br>
+3. 赛嘉洁面仪 免费兑换券：<br>
+3.1 中奖用户的优惠券直接到账至该用户爱奇艺账号，中奖用户可至“我的奖品”中选择此优惠券，点击立即使用，将此商品加入购物车，结算时可直接减免商品金额0元领取，或进入爱奇艺商城—我的—优惠券中查看并使用<br>
+3.2 该兑换券限指定商品使用，仅可抵扣商品金额，不抵扣运费，不折现；<br>
+3.3 兑换券有效期至:2021年3月9日23:59:59，逾期未兑换即为失效，不再进行补偿；<br>
+3.4 本奖项总计18份，数量有限，发完即止。<br>
+4. 唯凯诺手表150元优惠券：<br>
+4.1 中奖用户的优惠券直接到账至该用户爱奇艺账号，中奖用户可至“我的奖品”中选择此优惠券，点击立即使用，将此商品加入购物车，结算时可直接享受优惠，或进入爱奇艺商城—我的—优惠券中查看并使用<br>
+4.2 该优惠券限指定商品使用，仅可抵扣商品金额，不抵扣运费，不折现<br>
+4.3 优惠券有效期至:2021年3月9日23:59:59，逾期未兑换即为失效，不再进行补偿；<br>
+4.4 本奖项总计100000份，数量有限，发完即止。<br>
+5. 联想蓝牙耳机 90元优惠券：<br>
+5.1 中奖用户的优惠券直接到账至该用户爱奇艺账号，中奖用户可至“我的奖品”中选择此优惠券，点击立即使用，将此商品加入购物车，结算时可直接享受优惠，或进入爱奇艺商城—我的—优惠券中查看并使用；<br>
+5.2 该优惠券限指定商品使用，仅可抵扣商品金额，不抵扣运费，不折现；<br>
+5.3 优惠券有效期至:2021年3月9日23:59:59，逾期未兑换即为失效，不再进行补偿；<br>
+5.4 本奖项总计1000000份，数量有限，发完即止。<br>
+6. JBL蓝牙耳机 100元优惠券：<br>
+6.1 中奖用户的优惠券直接到账至该用户爱奇艺账号，中奖用户可至“我的奖品”中选择此优惠券，点击立即使用，将此商品加入购物车，结算时可直接享受优惠，或进入爱奇艺商城—我的—优惠券中查看并使用；<br>
+6.2 该优惠券限指定商品使用，仅可抵扣商品金额，不抵扣运费，不折现；<br>
+6.3 优惠券有效期至:2021年3月9日23:59:59，逾期未兑换即为失效，不再进行补偿；<br>
+6.4 本奖项总计100000份，数量有限，发完即止。<br>
+7. 爱奇艺商城5元无门槛券：<br>
+7.1 中奖用户的优惠券直接到账至该用户爱奇艺账号，中奖用户可至“我的奖品”中选择此优惠券，点击立即使用，挑选心仪的商品加入购物车，结算时勾选此优惠券，即可享受优惠， 或进入爱奇艺商城—我的—优惠券中查看并使用；<br>
+7.2 此优惠券为平台通用券，使用范围仅适用于爱奇艺APP内的爱奇艺商城版块（以下简称“爱奇艺商城版块”，但虚拟商品除外，虚拟商品包括但不限于数字娱乐VIP会员卡、虚拟充值卡等商品），具体以结算的订单界面为准；<br>
+7.3 优惠券有效期至:2021年3月9日23:59:59，逾期未兑换即为失效，不再进行补偿；<br>
+7.4 本奖项总计30000份，数量有限，发完即止。<br>
+8. 爱奇艺商城【满99减50元】优惠券：<br>
+8.1 中奖用户的优惠券直接到账至该用户爱奇艺账号，中奖用户可至“我的奖品”中选择此优惠券，点击立即使用，挑选心仪的商品加入购物车，结算时勾选此优惠券，即可享受优惠， 或进入爱奇艺商城—我的—优惠券中查看并使用；<br>
+8.2 此优惠券为平台通用券，使用范围适用于爱奇艺APP内的爱奇艺商城版块（以下简称“爱奇艺商城版块”，但虚拟商品除外，虚拟商品包括但不限于数字娱乐VIP会员卡、虚拟充值卡等商品），具体以结算的订单界面为准；<br>
+8.3 优惠券有效期至:2021年3月9日23:59:59，逾期未兑换即为失效，不再进行补偿；<br>
+8.4 本奖项总计20份，数量有限，发完即止。
+</p>
+<h2>四、其他规则：</h2>
+<p> 
+1. 活动时间内，用户不得使用任何外挂、插件以及其他破坏活动规则、违背活动公平原则的方式参加本次活动（如批量注册、恶意购买、虚假分享、倒买倒卖、虚假交易等），否则爱奇艺商城有权取消用户参与活动资格、并有权采取拒绝发货、取消订单、撤销相关违规交易、收回奖励等措施，同时保留依法向用户追究法律责任的权利。<br> 
+2. 活动期间，如出现不可抗力或情势变更的情况，包括但不限于重大灾害事件、活动或互动受政府机关指令需要停止举办或调整的、活动或互动遭受严重网络攻击或因系统故障需要暂停举办的，爱奇艺商城可依据相关法律法规的规定调整/暂停或提前终止活动，且爱奇艺商城可依相关法律法规的规定主张免责。<br> 
+</p>
+<h2>* 若您对本次活动规则有任何疑问，爱奇艺商城将在法律允许的范围内对本活动规则给予必要的说明和解释。</h2> 
+</div>
+<div class="btnClosePop"></div>
+</div>
